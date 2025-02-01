@@ -4,10 +4,9 @@ import { PropsWithChildren } from 'react';
 
 import { DropdownMenu, WideChevronIcon } from '@hyperlane-xyz/widgets';
 
-import { docLinks, links } from '../../consts/links';
-import Explorer from '../../images/logos/hyperlane-explorer.svg';
-import Logo from '../../images/logos/hyperlane-logo.svg';
-import Name from '../../images/logos/hyperlane-name.svg';
+import Explorer from '../../images/logos/explorer.svg';
+import Logo from '../../images/logos/logo.svg';
+import Name from '../../images/logos/name.svg';
 import { Color } from '../../styles/Color';
 import { useScrollThresholdListener } from '../../utils/useScrollListener';
 import { MiniSearchBar } from '../search/MiniSearchBar';
@@ -25,7 +24,7 @@ export function Header({ pathName }: { pathName: string }) {
 
   return (
     <header
-      className={`sticky top-0 z-10 w-full bg-blue-500 px-2 transition-all duration-200 ease-in-out sm:px-6 lg:px-12 ${
+      className={`sticky top-0 z-10 w-full bg-neutral-100 px-2 transition-all duration-200 ease-in-out sm:px-6 lg:px-12 ${
         animateHeader ? 'border-b border-white py-1' : 'py-4 sm:py-5'
       }`}
     >
@@ -51,20 +50,12 @@ export function Header({ pathName }: { pathName: string }) {
           <Link href="/" className={navLinkClass('/')}>
             Home
           </Link>
-          <a className={navLinkClass()} target="_blank" href={links.home} rel="noopener noreferrer">
+          <Link href="/about" className={navLinkClass('/about')}>
             About
-          </a>
-          {/* <Link href="/api-docs" className={navLinkClass('/api-docs')}>
-            API
-          </Link> */}
-          <a
-            className={navLinkClass()}
-            target="_blank"
-            href={docLinks.home}
-            rel="noopener noreferrer"
-          >
+          </Link>
+          <Link href="/docs" className={navLinkClass('/docs')}>
             Docs
-          </a>
+          </Link>
           {showSearch && <MiniSearchBar />}
         </nav>
         {/* Dropdown menu, used on mobile */}
@@ -84,17 +75,17 @@ export function Header({ pathName }: { pathName: string }) {
               //   </MobileNavLink>
               // ),
               ({ close }) => (
-                <MobileNavLink href={docLinks.home} closeDropdown={close} key="Docs">
+                <MobileNavLink href="/about" closeDropdown={close} key="Docs">
                   Docs
                 </MobileNavLink>
               ),
               ({ close }) => (
-                <MobileNavLink href={links.home} closeDropdown={close} key="About">
+                <MobileNavLink href="/docs" closeDropdown={close} key="About">
                   About
                 </MobileNavLink>
               ),
             ]}
-            menuClassname="!left-0 !right-0 py-7 px-8 bg-blue-500"
+            menuClassname="!left-0 !right-0 py-7 px-8 bg-neutral-100"
           />
         </div>
       </div>
@@ -104,7 +95,7 @@ export function Header({ pathName }: { pathName: string }) {
 
 function DropdownButton() {
   return (
-    <div className="flex flex-col items-center rounded-lg border border-white bg-pink-500 px-4 py-1">
+    <div className="flex flex-col items-center rounded-lg border border-white bg-purple-950 px-4 py-1">
       <WideChevronIcon
         width={10}
         height={14}
@@ -144,14 +135,14 @@ function MobileNavLink({
       rel={isExternal ? 'noopener noreferrer' : undefined}
       target={isExternal ? '_blank' : undefined}
     >
-      <span className="text-xl font-medium capitalize text-white">{children}</span>
+      <span className="text-xl font-medium capitalize text-black">{children}</span>
     </Link>
   );
 }
 
 const styles = {
   navLink:
-    'flex items-center font-medium text-white tracking-wide hover:underline active:opacity-80 decoration-4 decoration-pink-500 underline-offset-[3px] transition-all',
+    'flex items-center font-medium text-black tracking-wide hover:underline active:opacity-80 decoration-4 decoration-pink-500 underline-offset-[3px] transition-all',
   dropdownOption:
-    'flex items-center cursor-pointer p-2 mt-1 rounded text-blue-500 font-medium hover:underline decoration-2 underline-offset-4 transition-all',
+    'flex items-center cursor-pointer p-2 mt-1 rounded text-purple-950 font-medium hover:underline decoration-2 underline-offset-4 transition-all',
 };

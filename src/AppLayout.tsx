@@ -16,11 +16,11 @@ export function AppLayout({ pathName, children }: PropsWithChildren<Props>) {
       <Head>
         {/* https://nextjs.org/docs/messages/no-document-viewport-meta */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{`Hyperlane Explorer | ${getHeadTitle(pathName)}`}</title>
+        <title>{`Bridge Chain Explorer | ${getHeadTitle(pathName)}`}</title>
       </Head>
       <div
         style={styles.container}
-        className="min-w-screen relative flex h-full min-h-screen w-full flex-col justify-between bg-blue-500"
+        className="min-w-screen relative flex h-full min-h-screen w-full flex-col justify-between bg-neutral-100"
       >
         {/* <InfoBanner /> */}
         <Header pathName={pathName} />

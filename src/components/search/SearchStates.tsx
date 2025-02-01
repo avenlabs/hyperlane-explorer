@@ -58,7 +58,7 @@ export function NoSearchError({ show }: { show: boolean }) {
     <SearchError
       show={show}
       imgSrc={BugIcon}
-      text="Enter a transaction hash that involved at least one Hyperlane message to begin."
+      text="Enter a transaction hash that involved at least one Bridge Chain message to begin."
       imgWidth={50}
     />
   );

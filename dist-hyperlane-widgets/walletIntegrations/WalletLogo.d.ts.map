@@ -1,0 +1,1 @@
+{"version":3,"file":"WalletLogo.d.ts","sourceRoot":"","sources":["../../src/walletIntegrations/WalletLogo.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAK1B,OAAO,EAAE,aAAa,EAAE,MAAM,YAAY,CAAC;AAE3C,wBAAgB,UAAU,CAAC,EACzB,aAAa,EACb,IAAI,GACL,EAAE;IACD,aAAa,EAAE,aAAa,CAAC;IAC7B,IAAI,CAAC,EAAE,MAAM,CAAC;CACf,qBAUA"}

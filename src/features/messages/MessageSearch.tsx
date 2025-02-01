@@ -6,11 +6,11 @@ import { Card } from '../../components/layout/Card';
 import { SearchBar } from '../../components/search/SearchBar';
 import { SearchFilterBar } from '../../components/search/SearchFilterBar';
 import {
-  SearchChainError,
-  SearchEmptyError,
-  SearchFetching,
-  SearchInvalidError,
-  SearchUnknownError,
+    SearchChainError,
+    SearchEmptyError,
+    SearchFetching,
+    SearchInvalidError,
+    SearchUnknownError,
 } from '../../components/search/SearchStates';
 import { useReadyMultiProvider } from '../../store';
 import { useMultipleQueryParams, useSyncQueryParam } from '../../utils/queryParams';
@@ -136,7 +136,7 @@ export function MessageSearch() {
       />
       <Card className="relative mt-4 min-h-[38rem] w-full" padding="">
         <div className="flex items-center justify-between px-2 pb-3 pt-3.5 sm:px-4 md:px-5">
-          <h2 className="w-min pl-0.5 font-medium text-blue-500 sm:w-fit">
+          <h2 className="w-min pl-0.5 font-medium text-purple-950 sm:w-fit">
             {!hasInput ? 'Latest Messages' : 'Search Results'}
           </h2>
           <div className="flex items-center space-x-2 md:space-x-4">
@@ -175,7 +175,7 @@ export function MessageSearch() {
 
 function RefreshButton({ loading, onClick }: { loading: boolean; onClick: () => void }) {
   return (
-    <IconButton onClick={onClick} className="rounded-lg bg-pink-500 p-1" disabled={loading}>
+    <IconButton onClick={onClick} className="rounded-lg bg-purple-950 p-1" disabled={loading}>
       <RefreshIcon color="white" height={20} width={20} />
     </IconButton>
   );

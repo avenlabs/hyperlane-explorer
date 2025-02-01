@@ -71,7 +71,7 @@ export function ContentDetailsCard({
       <div className="flex items-center justify-between">
         <Image src={EnvelopeInfo} width={28} height={28} alt="" className="opacity-80" />
         <div className="flex items-center pb-1">
-          <h3 className="mr-2 text-md font-medium text-blue-500">Message Details</h3>
+          <h3 className="mr-2 text-md font-medium text-purple-950">Message Details</h3>
           <Tooltip
             id="message-info"
             content="Immutable information about the message itself such as its contents."

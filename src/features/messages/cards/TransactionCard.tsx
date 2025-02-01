@@ -181,7 +181,7 @@ function TransactionCard({
           <ChainLogo chainName={chainName} />
         </div>
         <div className="flex items-center pb-1">
-          <h3 className="mr-2 text-md font-medium text-blue-500">{title}</h3>
+          <h3 className="mr-2 text-md font-medium text-purple-950">{title}</h3>
           <Tooltip id="transaction-info" content={helpText} />
         </div>
       </div>
@@ -312,7 +312,7 @@ function CallDataModal({ debugResult }: { debugResult?: MessageDebugResult }) {
           <p className="text-sm font-light">
             {`The last step of message delivery is the recipient contract's 'handle' function. If the handle is reverting, try debugging it with `}
             <a
-              className={`${styles.textLink} all:text-blue-500`}
+              className={`${styles.textLink} all:text-purple-950`}
               href={links.tenderlySimDocs}
               target="_blank"
               rel="noopener noreferrer"

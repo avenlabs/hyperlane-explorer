@@ -29,19 +29,19 @@ export function SolidButton(props: PropsWithChildren<ButtonProps>) {
   const base = 'flex items-center justify-center rounded-full transition-all duration-500';
   let baseColors, onHover, onActive;
   if (color === 'blue') {
-    baseColors = 'bg-blue-500 text-white';
+    baseColors = 'bg-neutral-100 text-black';
     onHover = 'hover:bg-blue-600';
     onActive = 'active:bg-blue-700';
   } else if (color === 'pink') {
-    baseColors = 'bg-pink-500 text-white';
-    onHover = 'hover:bg-pink-600';
+    baseColors = 'bg-purple-950 text-black';
+    onHover = 'hover:bg-purple-950';
     onActive = 'active:bg-pink-700';
   } else if (color === 'green') {
-    baseColors = 'bg-green-500 text-white';
+    baseColors = 'bg-green-500 text-black';
     onHover = 'hover:bg-green-600';
     onActive = 'active:bg-green-700';
   } else if (color === 'red') {
-    baseColors = 'bg-red-600 text-white';
+    baseColors = 'bg-red-600 text-black';
     onHover = 'hover:bg-red-500';
     onActive = 'active:bg-red-400';
   } else if (color === 'white') {

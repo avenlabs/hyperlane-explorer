@@ -1,22 +1,22 @@
 export const links = {
   baseUrl: 'https://www.hyperlane.xyz',
-  home: 'https://www.hyperlane.xyz',
-  discord: 'https://discord.gg/VK9ZUy3aTV',
-  github: 'https://github.com/hyperlane-xyz',
-  jobs: 'https://jobs.lever.co/Hyperlane',
-  twitter: 'https://x.com/hyperlane',
-  blog: 'https://medium.com/hyperlane',
+  home: 'https://avenlabs.kvantum.guru',
+  discord: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  github: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  jobs: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  twitter: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  blog: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   tenderlySimDocs:
-    'https://docs.tenderly.co/simulations-and-forks/how-to-simulate-a-transaction/using-simulation-ui',
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   brand:
-    'https://www.figma.com/file/jC5NORmNDCl6WZgjIRwKX5/Hyperlane-Brand-Assets-%5BExternal%5D?type=design&node-id=0-1&t=6eez9F8gttV7L6VG-0',
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 };
 
 export const docLinks = {
-  home: 'https://docs.hyperlane.xyz/',
-  chains: 'https://docs.hyperlane.xyz/docs/reference/domains',
-  pi: 'https://docs.hyperlane.xyz/docs/deploy-hyperlane',
-  ism: 'https://docs.hyperlane.xyz/docs/reference/ISM/specify-your-ISM',
-  gas: 'https://docs.hyperlane.xyz/docs/protocol/interchain-gas-payment',
-  registry: 'https://docs.hyperlane.xyz/docs/reference/registries',
+  home: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  chains: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  pi: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  ism: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  gas: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  registry: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 };

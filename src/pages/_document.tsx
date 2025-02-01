@@ -18,27 +18,27 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#2362C1" />
         <meta name="theme-color" content="#ffffff" />
 
-        <meta name="application-name" content="Hyperlane Explorer" />
+        <meta name="application-name" content="Bridge Chain Explorer" />
         <meta
           name="keywords"
-          content="Hyperlane Explorer Scan Interchain Permissionless Interoperability Network Blockchain"
+          content="Bridge Chain Explorer Scan Interchain Permissionless Interoperability Network Blockchain"
         />
         <meta
           name="description"
-          content="The official interchain explorer for the Hyperlane protocol and network."
+          content="The official interchain explorer for the Bridge Chain protocol and network."
         />
 
         <meta name="HandheldFriendly" content="true" />
-        <meta name="apple-mobile-web-app-title" content="Hyperlane Explorer" />
+        <meta name="apple-mobile-web-app-title" content="Bridge Chain Explorer" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
         <meta property="og:url" content={links.baseUrl} />
-        <meta property="og:title" content="Hyperlane Explorer" />
+        <meta property="og:title" content="Bridge Chain Explorer" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={links.baseUrl + '/images/logo.png'} />
         <meta
           property="og:description"
-          content="The official interchain explorer for the Hyperlane protocol and network."
+          content="The official interchain explorer for the Bridge Chain protocol and network."
         />
       </Head>
       <body className={`${MAIN_FONT.variable} font-sans text-black`}>

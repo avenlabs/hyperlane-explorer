@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { ChainMetadata, getDomainId } from '@hyperlane-xyz/sdk';
 import { trimToLength } from '@hyperlane-xyz/utils';
 import {
-  ChevronIcon,
-  DatetimeField,
-  IconButton,
-  Popover,
-  XIcon,
-  useModal,
+    ChevronIcon,
+    DatetimeField,
+    IconButton,
+    Popover,
+    XIcon,
+    useModal,
 } from '@hyperlane-xyz/widgets';
 
 import { ChainSearchModal } from '../../features/chains/ChainSearchModal';
@@ -90,8 +90,8 @@ function ChainSelector({
       <button
         type="button"
         className={clsx(
-          'flex items-center justify-center rounded-lg border border-pink-500 px-1.5 py-1 text-sm font-medium transition-all hover:opacity-80 active:opacity-70 sm:min-w-[5.8rem] sm:px-2.5',
-          value ? 'bg-pink-500 pr-7 text-white sm:pr-8' : 'text-pink-500',
+          'flex items-center justify-center rounded-lg border border-purple-500 px-1.5 py-1 text-sm font-medium transition-all hover:opacity-80 active:opacity-70 sm:min-w-[5.8rem] sm:px-2.5',
+          value ? 'bg-purple-950 pr-7 text-black sm:pr-8' : 'text-purple-900',
         )}
         onClick={open}
       >
@@ -164,17 +164,17 @@ function DatetimeSelector({
           </>
         }
         buttonClassname={clsx(
-          'flex items-center justify-center rounded-lg border border-pink-500 px-2 py-1 text-sm font-medium transition-all hover:opacity-80 active:opacity-70 sm:px-3',
-          hasValue ? 'bg-pink-500 pr-7 text-white sm:pr-8' : 'text-pink-500',
+          'flex items-center justify-center rounded-lg border border-purple-500 px-2 py-1 text-sm font-medium transition-all hover:opacity-80 active:opacity-70 sm:px-3',
+          hasValue ? 'bg-purple-950 pr-7 text-black sm:pr-8' : 'text-purple-900',
         )}
         panelClassname="w-60"
       >
         {({ close }) => (
           <div className="p-4" key="date-time-selector">
             <div className="flex items-center justify-between">
-              <h3 className="font-medium text-blue-500">Time Range</h3>
+              <h3 className="font-medium text-purple-950">Time Range</h3>
               <div className="flex pt-1">
-                <TextButton classes="text-sm font-medium text-pink-500" onClick={onClickClear}>
+                <TextButton classes="text-sm font-medium text-purple-900" onClick={onClickClear}>
                   Clear
                 </TextButton>
               </div>

@@ -1,10 +1,10 @@
 // Partly copied from https://github.com/hyperlane-xyz/hyperlane-website/blob/main/src/components/nav/Footer.tsx
+import Image from 'next/image';
 import Link from 'next/link';
 
-import { DiscordIcon, GithubIcon, HyperlaneLogo, TwitterIcon } from '@hyperlane-xyz/widgets';
-
+import { DiscordIcon, GithubIcon, TwitterIcon } from '@hyperlane-xyz/widgets';
 import { docLinks, links } from '../../consts/links';
-import { Color } from '../../styles/Color';
+import Logo from '../../images/logos/logo.svg';
 
 const footerLinks1 = [
   { title: 'Docs', url: docLinks.home, external: true },
@@ -13,10 +13,10 @@ const footerLinks1 = [
 ];
 
 const footerLinks2 = [
-  { title: 'Careers', url: 'https://jobs.lever.co/Hyperlane', external: true },
+  { title: 'Careers', url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', external: true },
   {
     title: 'Bounty',
-    url: 'https://github.com/search?q=org%3Ahyperlane-xyz+label%3Abounty+is%3Aopen+is%3Aissue&type=issues&s=&o=desc',
+    url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     external: true,
   },
   { title: 'Brand', url: links.brand, external: true },
@@ -30,15 +30,15 @@ const footerLinks3 = [
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-transparent to-black/40 px-8 pb-5 pt-14 text-white">
+    <footer className="bg-gradient-to-b from-transparent to-black/40 px-8 pb-5 pt-14 text-black">
       <div className="flex flex-col items-center justify-between gap-10 sm:flex-row">
         <div className="flex items-center justify-center">
           <div className="ml-2 h-12 w-12 sm:h-14 sm:w-14">
-            <HyperlaneLogo color={Color.white} />
+          <Image src={Logo} alt="" />
           </div>
           <div className="ml-6 space-y-1 text-lg font-medium sm:text-xl">
             <div>Go interchain</div>
-            <div>with Hyperlane</div>
+            <div>with Bridge Chain</div>
           </div>
         </div>
         <nav className="flex font-medium">

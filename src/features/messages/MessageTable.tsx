@@ -136,7 +136,7 @@ function LinkCell({
 }
 
 const styles = {
-  header: 'text-sm text-blue-500 font-medium pt-2 pb-3 text-center',
+  header: 'text-sm text-purple-950 font-medium pt-2 pb-3 text-center',
   value: 'py-3.5 flex items-center justify-center text-sm text-center font-light px-1',
   valueTruncated: 'py-3.5 flex items-center justify-center text-sm text-center font-light truncate',
   chainName: 'text-sm font-light ml-2',

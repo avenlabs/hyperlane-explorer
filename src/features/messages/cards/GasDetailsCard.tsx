@@ -78,7 +78,7 @@ export function GasDetailsCard({ message, blur, igpPayments = {} }: Props) {
       <div className="flex items-center justify-between">
         <Image src={FuelPump} width={24} height={24} alt="" className="opacity-80" />
         <div className="flex items-center pb-1">
-          <h3 className="mr-2 text-md font-medium text-blue-500">Interchain Gas Payments</h3>
+          <h3 className="mr-2 text-md font-medium text-purple-950">Interchain Gas Payments</h3>
           <Tooltip
             content="Amounts paid to the Interchain Gas Paymaster for message delivery."
             id="gas-info"
@@ -91,9 +91,9 @@ export function GasDetailsCard({ message, blur, igpPayments = {} }: Props) {
           href={docLinks.gas}
           target="_blank"
           rel="noopener noreferrer"
-          className="cursor-pointer text-blue-500 transition-all hover:text-blue-400 active:text-blue-300"
+          className="cursor-pointer text-purple-950 transition-all hover:text-blue-400 active:text-blue-300"
         >
-          Learn more about gas on Hyperlane.
+          Learn more about gas on Bridge Chain.
         </a>
       </p>
       <div className="mr-36 flex flex-wrap gap-x-4 gap-y-4">

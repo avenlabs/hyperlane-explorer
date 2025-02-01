@@ -94,7 +94,7 @@ export function MessageDetails({ messageId, message: messageFromUrlParams }: Pro
   return (
     <>
       <Card className="flex items-center justify-between rounded-full px-1">
-        <h2 className="font-medium text-blue-500">{`${
+        <h2 className="font-medium text-purple-950">{`${
           isIcaMsg ? 'ICA ' : ''
         } Message ${trimToLength(msgId, 6)} to ${getChainDisplayName(
           multiProvider,
@@ -177,7 +177,7 @@ function StatusHeader({
 
   return (
     <div className="flex items-center">
-      <h3 className="lg mr-3 font-medium text-blue-500">{text}</h3>
+      <h3 className="lg mr-3 font-medium text-purple-950">{text}</h3>
       {icon}
     </div>
   );
